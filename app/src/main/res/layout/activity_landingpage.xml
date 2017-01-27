@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:customtv="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/logo"
+        android:transitionName="appicons" />
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:id="@+id/tv_cafu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:text="@string/cafu"
+        android:textColor="@color/bs_blue"
+        android:textSize="22sp"
+        customtv:fontType="5" />
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cafu"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="@string/tovsv"
+        android:textColor="@color/bs_blue"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        customtv:fontType="5" />
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:id="@+id/tv_clickhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_ok"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/template_button_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/ch"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        customtv:fontType="5" />
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:id="@+id/tv_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="@string/or"
+        android:textColor="@color/bs_blue"
+        android:textSize="28sp"
+        customtv:fontType="5" />
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:id="@+id/tv_trysattp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_subscribenow"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:text="@string/trysattp"
+        android:textColor="@color/bs_blue"
+        android:textSize="22sp"
+        customtv:fontType="5" />
+
+    <TableRow
+        android:id="@+id/t_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_trysattp"
+        android:gravity="center">
+
+        <com.sharmastech.skillhouettes.controls.CustomTextView
+            android:id="@+id/tv_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/teacherlogin"
+            android:textColor="@color/bs_blue"
+            android:textSize="20sp"
+            customtv:fontType="5" />
+
+        <com.sharmastech.skillhouettes.controls.CustomTextView
+            android:id="@+id/tv_login_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_login"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/stulogin"
+            android:textColor="@color/bs_blue"
+            android:textSize="20sp"
+            customtv:fontType="5" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/t_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/t_login"
+        android:gravity="center">
+
+        <com.sharmastech.skillhouettes.controls.CustomTextView
+            android:id="@+id/tv_logout_tchr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Teacher Logout"
+            android:textColor="@color/bs_blue"
+            android:textSize="20sp"
+            android:visibility="gone"
+            customtv:fontType="5" />
+
+        <com.sharmastech.skillhouettes.controls.CustomTextView
+            android:id="@+id/tv_logout_stu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/border"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="Student Logout"
+            android:layout_marginLeft="2dp"
+            android:visibility="gone"
+            android:textColor="@color/bs_blue"
+            android:textSize="20sp"
+            customtv:fontType="5" />
+    </TableRow>
+
+    <com.sharmastech.skillhouettes.controls.CustomTextView
+        android:id="@+id/tv_subscribenow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_ok"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/template_button_bg"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="@string/sn"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        customtv:fontType="5" />
+
+
+</RelativeLayout>

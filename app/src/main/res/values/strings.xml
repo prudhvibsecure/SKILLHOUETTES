@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">SKILL HOUETTES</string>
+
+
+    <string name="ss">STUDENTS SKILLS</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="isr">Invalid server response</string>
+    <string name="sct">Server connection timeout.!</string>
+    <string name="snr1">Server not reachable.!</string>
+    <string name="iurl">Invalid URL</string>
+    <string name="snr2">Server not reachable.!!</string>
+    <string name="snr3">Server not reachable.!!!</string>
+    <string name="snr8">Server not reachable.!!!</string>
+    <string name="nipcyns">No internet, please check your internet settings</string>
+    <string name="yhcdr">You have cancelled download request.</string>
+    <string name="isres">Invalid server response :</string>
+    <string name="edcpda">Checksum values incorrect</string>
+    <string name="dfptl">Download failed, please try later.</string>
+    <string name="pid">Permission denied</string>
+
+    <string name="password">Password</string>
+    <string name="forgotPassword"><u>Forgot Password</u></string>
+    <string name="login">Login</string>
+    <string name="signup">Sign up</string>
+    <string name="createnewaccount"><u>Student Login</u></string>
+    <string name="aemail">Username</string>
+
+    <string name="teacheradd">Address</string>
+    <string name="username">Username</string>
+    <string name="firstname">First name</string>
+    <string name="lastname">Last name</string>
+    <string name="emailid">Email id</string>
+    <string name="phoneno">Phone number</string>
+    <string name="dob">Date Of Birth</string>
+    <string name="streetno">Street No</string>
+    <string name="school">School Name</string>
+
+
+    <string name="teacherlogin">Teacher Login</string>
+    <string name="stulogin">Student Login</string>
+    <string name="teachersignup">Teacher Sign up</string>
+    <string name="stusignup">Student Sign up</string>
+
+    <string name="ok_txt">OK</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="pwait">Please wait....</string>
+
+    <string name="peti">Please enter streetname</string>
+    <string name="pschool">Please enter school name</string>
+    <string name="peu">Please enter username</string>
+    <string name="pep">Please enter password</string>
+    <string name="pefn">Please enter first name</string>
+    <string name="peln">Please enter last name</string>
+    <string name="psmbc">Password strength must be 8&#8211;16 characters</string>
+    <string name="peei">Please enter Email Address</string>
+    <string name="peavei">Please enter a valid Email Address</string>
+    <string name="pepn">Please enter phone number</string>
+    <string name="pedb">Please enter date of birth</string>
+    <string name="paddr">Please enter address</string>
+
+
+    <string name="cafu">CONTINUE AS FREE USER</string>
+    <string name="tovsv">to only view skill videos</string>
+    <string name="ch">CLICK HERE</string>
+    <string name="or">OR</string>
+    <string name="sn">SUBSCRIBE NOW</string>
+    <string name="trysattp">to register your students and track their progress</string>
+
+    <string name="nocontent">No Content</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lorem_ipsum">Text</string>
+
+    <string name="stop">Stop</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="status">Status</string>
+    <string name="empty_message">00:00</string>
+    <string name="minlft"> mins left</string>
+    <string name="seclft"> sec left</string>
+
+</resources>

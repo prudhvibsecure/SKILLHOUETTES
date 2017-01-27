@@ -1,0 +1,128 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:customtv="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.sharmastech.skillhouettes.fragments.SkillsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.sharmastech.skillhouettes.controls.CustomTextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#50ffffff"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="@string/ss"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            customtv:fontType="5" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.sharmastech.skillhouettes.controls.CustomTextView
+                    android:id="@+id/tv_studenttitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:paddingLeft="5dp"
+                    android:singleLine="true"
+                    android:text="@string/ss"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    customtv:fontType="5" />
+
+                <ImageView
+                    android:id="@+id/iv_studentimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/app_name"
+                    android:src="@mipmap/ic_launcher" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="5dp">
+
+                <com.sharmastech.skillhouettes.controls.CustomTextView
+                    android:id="@+id/tv_studentname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    customtv:fontType="5" />
+
+                <com.sharmastech.skillhouettes.controls.CustomTextView
+                    android:id="@+id/tv_favouriteband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:singleLine="true"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    customtv:fontType="5" />
+
+                <com.sharmastech.skillhouettes.controls.CustomTextView
+                    android:id="@+id/tv_studenthobies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    customtv:fontType="5" />
+
+                <com.sharmastech.skillhouettes.controls.CustomTextView
+                    android:id="@+id/tv_studentdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:inputType="textLongMessage"
+                    android:maxLines="1"
+                    android:paddingBottom="5dp"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    customtv:fontType="4" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <include layout="@layout/template_recyclerview" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

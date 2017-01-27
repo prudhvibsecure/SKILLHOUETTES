@@ -1,0 +1,27 @@
+
+Skills App:
+=================================================================
+
+login=http://tasmanian.properties/skills/teacher/login
+
+tchr_register=http://tasmanian.properties/skills/teacher/registration
+
+skill_detail=http://tasmanian.properties/skills/skills/
+
+i_path=http://tasmanian.properties/skills/assets/uploads/news/
+
+student_register=http://tasmanian.properties/skills/student/registration
+
+student_login=http://tasmanian.properties/skills/student/login
+
+student_skill=http://tasmanian.properties/skills/teacher/studentdetails
+
+feed_back=http://tasmanian.properties/skills/teacher/feedback
+
+update_status=http://tasmanian.properties/skills/teacher/updatestatus
+
+st_add_video=http://tasmanian.properties/skills/student/addvideo
+
+st_compare_video= http://tasmanian.properties/skills/student/comparevideo
+
+upload_file=http://tasmanian.properties/skills/student/uploadfile
