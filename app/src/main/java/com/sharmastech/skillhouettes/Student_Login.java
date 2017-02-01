@@ -88,10 +88,14 @@ public class Student_Login extends FragmentActivity implements IItemHandler {
                 return;
             }
 
-            if (password.length() < 8) {
-                showEditTextError((EditText) findViewById(R.id.password), getString(R.string.psmbc));
-                return;
-            }
+//            if (password.length() < 8) {
+//                showEditTextError((EditText) findViewById(R.id.password), getString(R.string.psmbc));
+//                return;
+//            }
+//            if (password.length() > 16) {
+//                showEditTextError((EditText) findViewById(R.id.password), getString(R.string.psmbc));
+//                return;
+//            }
 
             String url = AppSettings.getInstance(this).getPropertyValue("student_login");
             JSONObject object = new JSONObject();
@@ -122,6 +126,7 @@ public class Student_Login extends FragmentActivity implements IItemHandler {
         mainIntent.putExtra("username",username);
         mainIntent.putExtra("password",password);
         mainIntent.putExtra("simage",simage);
+        mainIntent.putExtra("email",email);
         startActivityForResult(mainIntent, requestCode);
     }
 

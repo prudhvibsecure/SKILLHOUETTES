@@ -28,7 +28,7 @@
     <string name="login">Login</string>
     <string name="signup">Sign up</string>
     <string name="createnewaccount"><u>Student Login</u></string>
-    <string name="aemail">Username</string>
+    <string name="aemail">Username/Email Address</string>
 
     <string name="teacheradd">Address</string>
     <string name="username">Username</string>
@@ -51,15 +51,15 @@
 
     <string name="pwait">Please wait....</string>
 
-    <string name="peti">Please enter streetname</string>
+    <string name="peti">Please enter streetno</string>
     <string name="pschool">Please enter school name</string>
     <string name="peu">Please enter username</string>
     <string name="pep">Please enter password</string>
     <string name="pefn">Please enter first name</string>
     <string name="peln">Please enter last name</string>
     <string name="psmbc">Password strength must be 8&#8211;16 characters</string>
-    <string name="peei">Please enter Email Address</string>
-    <string name="peavei">Please enter a valid Email Address</string>
+    <string name="peei">Please enter email address</string>
+    <string name="peavei">Please enter a valid email address</string>
     <string name="pepn">Please enter phone number</string>
     <string name="pedb">Please enter date of birth</string>
     <string name="paddr">Please enter address</string>
@@ -85,5 +85,7 @@
     <string name="empty_message">00:00</string>
     <string name="minlft"> mins left</string>
     <string name="seclft"> sec left</string>
+    <string name="read_more">More</string>
+    <string name="read_less">Less</string>
 
 </resources>

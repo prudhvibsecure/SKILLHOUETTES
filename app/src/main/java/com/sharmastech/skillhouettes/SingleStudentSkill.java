@@ -95,10 +95,8 @@ public class SingleStudentSkill extends AppCompatActivity implements View.OnClic
 
         mRecyclerView = (RecyclerView) findViewById(R.id.rv_content_list);
         mRecyclerView.setNestedScrollingEnabled(true);
-
         mRecyclerView.setLayoutManager(layoutManager);
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-
 
         adapter = new FeaturesAdapter(this);
         adapter.setOnClickListener(this);
@@ -177,27 +175,27 @@ public class SingleStudentSkill extends AppCompatActivity implements View.OnClic
             e.printStackTrace();
         }
 
-        rDialog = new Dialog(this);
-        rDialog.setContentView(R.layout.notification);
-
-
-        TextView title = (TextView) rDialog.findViewById(R.id.txt_notification);
-        title.setText("Update Future status");
-        Button submit = (Button) rDialog.findViewById(R.id.notify_sub);
-        if ("Yes".equalsIgnoreCase(status)) {
-            ((RadioButton) rDialog.findViewById(R.id.notify_yes)).setChecked(true);
-        } else {
-            ((RadioButton) rDialog.findViewById(R.id.notify_no)).setChecked(true);
-        }
-        submit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                upDateStatus(itemPosition, student_id, featureid, status);
-            }
-
-        });
-
-        rDialog.show();
+//        rDialog = new Dialog(this);
+//        rDialog.setContentView(R.layout.notification);
+//
+//
+//        TextView title = (TextView) rDialog.findViewById(R.id.txt_notification);
+//        title.setText("Update Future status");
+//        Button submit = (Button) rDialog.findViewById(R.id.notify_sub);
+//        if ("Yes".equalsIgnoreCase(status)) {
+//            ((RadioButton) rDialog.findViewById(R.id.notify_yes)).setChecked(true);
+//        } else {
+//            ((RadioButton) rDialog.findViewById(R.id.notify_no)).setChecked(true);
+//        }
+//        submit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                upDateStatus(itemPosition, student_id, featureid, status);
+//            }
+//
+//        });
+//
+//        rDialog.show();
     }
 
     private void upDateStatus(int itemPosition, String student_id, String featureid, String status) {

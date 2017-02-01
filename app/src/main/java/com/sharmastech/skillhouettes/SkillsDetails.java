@@ -45,7 +45,7 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
 
     private FeaturesAdapter adapter;
 
-    private String student_id, featureid = null, status = null;
+    private String student_id, featureid = null, status = null,skill_id=null;
 
     private Dialog rDialog;
 
@@ -94,7 +94,7 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
 
                 }
                 if (i == position) {
-
+                    skill_id=jsonObject.optString("skillid");
                     ((TextView) findViewById(R.id.tv_studenttitle)).setText(jsonObject.optString("skillname"));
                     ((TextView) findViewById(R.id.tv_favouriteband)).setText(Html.fromHtml("Favorite Band :" + " " + jsonObject.optString("band")));
                     ((TextView) findViewById(R.id.tv_studenthobies)).setText(Html.fromHtml("Hobbies :" + " " + jsonObject.optString("hobbies")));
@@ -127,13 +127,16 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
             jsonArray = new JSONArray(data);
             for (int i = 0; i < jsonArray.length(); i++) {
                 JSONObject jsonObject = jsonArray.getJSONObject(i);
-                JSONArray skillsobject = jsonObject.getJSONArray("features");
-                for (int j = 0; j < skillsobject.length(); j++) {
-                    JSONObject jsonObject2 = skillsobject.getJSONObject(j);
-                    if (j == itemPosition) {
-                        featureid = jsonObject2.optString("featureid");
-                        status = jsonObject2.optString("status");
+                String skid=jsonObject.optString("skillid");
+                if (skid.equals(skill_id)) {
+                    JSONArray skillsobject = jsonObject.getJSONArray("features");
+                    for (int j = 0; j < skillsobject.length(); j++) {
+                        JSONObject jsonObject2 = skillsobject.getJSONObject(j);
+                        if (j == itemPosition) {
+                            featureid = jsonObject2.optString("featureid");
+                            status = jsonObject2.optString("status");
 
+                        }
                     }
                 }
 
@@ -147,7 +150,7 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
 
 
         TextView title = (TextView) rDialog.findViewById(R.id.txt_notification);
-        title.setText("Update Future status");
+        title.setText("Update Feature Status");
         Button submit = (Button) rDialog.findViewById(R.id.notify_sub);
         if ("Yes".equalsIgnoreCase(status)) {
             ((RadioButton) rDialog.findViewById(R.id.notify_yes)).setChecked(true);
@@ -157,7 +160,8 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                upDateStatus(itemPosition, student_id, featureid, status);
+                String fid=featureid;
+                upDateStatus(itemPosition, student_id, fid);
             }
 
         });
@@ -165,7 +169,7 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
         rDialog.show();
     }
 
-    private void upDateStatus(int itemPosition, String student_id, String featureid, String status) {
+    private void upDateStatus(int itemPosition, String student_id, String featureid) {
         try {
 
             RadioGroup rg = (RadioGroup) rDialog.findViewById(R.id.notify_grp);
@@ -176,7 +180,6 @@ public class SkillsDetails extends AppCompatActivity implements View.OnClickList
             object.put("studentid", student_id);
             object.put("featureid", featureid);
             object.put("status", content);
-
             HTTPostJson post = new HTTPostJson(this, this, object.toString(), 1);
             post.setContentType("application/json");
             post.execute(url, "");

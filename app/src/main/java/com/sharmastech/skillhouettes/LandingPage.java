@@ -36,16 +36,16 @@ public class LandingPage extends FragmentActivity {
         String username = getFromStore("username");
         if (username.length()!=0){
             findViewById(R.id.tv_logout_tchr).setVisibility(View.VISIBLE);
-            ((TextView)findViewById(R.id.tv_login)).setText("Teacher Home");
+            ((TextView)findViewById(R.id.tv_login)).setText(Html.fromHtml("<u>Teacher Home</u>"));
         }else {
-            ((TextView)findViewById(R.id.tv_login)).setText("Teacher Login");
+            ((TextView)findViewById(R.id.tv_login)).setText(Html.fromHtml("<u>Teacher Login</u>"));
         }
         String id = getFromStore("studentid");
         if (id.length()!=0){
             findViewById(R.id.tv_logout_stu).setVisibility(View.VISIBLE);
-            ((TextView)findViewById(R.id.tv_login_student)).setText("Student Home");
+            ((TextView)findViewById(R.id.tv_login_student)).setText(Html.fromHtml("<u>Student Home</u>"));
         }else {
-            ((TextView)findViewById(R.id.tv_login_student)).setText("Student Login");
+            ((TextView)findViewById(R.id.tv_login_student)).setText(Html.fromHtml("<u>Student Login</u>"));
         }
 
     }

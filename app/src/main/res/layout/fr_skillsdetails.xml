@@ -60,8 +60,8 @@
 
                     <ImageView
                         android:id="@+id/iv_studentimage"
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
                         android:contentDescription="@string/app_name"
                         android:src="@mipmap/ic_launcher" />
 
@@ -79,43 +79,42 @@
                         android:id="@+id/tv_studentname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
+                        android:gravity="left"
+                        android:singleLine="true"
                         android:maxLines="1"
                         android:paddingBottom="5dp"
-                        android:singleLine="true"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
                         customtv:fontType="5" />
 
-                    <com.sharmastech.skillhouettes.controls.CustomTextView
+                    <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                         android:id="@+id/tv_favouriteband"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:maxLines="1"
+                        android:gravity="left"
+                        app:trimLength="30"
                         android:paddingBottom="5dp"
-                        android:singleLine="true"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
                         customtv:fontType="5" />
 
-                    <com.sharmastech.skillhouettes.controls.CustomTextView
+                    <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                         android:id="@+id/tv_studenthobies"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:maxLines="1"
+                        android:gravity="left"
+                        app:trimLength="40"
                         android:paddingBottom="5dp"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"
                         customtv:fontType="5" />
 
-                    <com.sharmastech.skillhouettes.controls.CustomTextView
+                    <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                         android:id="@+id/tv_studentdesc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:gravity="center"
-                        android:maxLines="1"
+                        android:gravity="left"
+                        app:trimLength="50"
                         android:paddingBottom="5dp"
                         android:textColor="@android:color/white"
                         android:textSize="14sp"

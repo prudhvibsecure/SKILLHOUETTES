@@ -124,29 +124,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/border"
+            android:background="@drawable/template_button_bg"
             android:gravity="center"
             android:padding="5dp"
             android:text="Teacher Logout"
-            android:textColor="@color/bs_blue"
-            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
             android:visibility="gone"
-            customtv:fontType="5" />
+            customtv:fontType="3" />
 
         <com.sharmastech.skillhouettes.controls.CustomTextView
             android:id="@+id/tv_logout_stu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:background="@drawable/border"
+            android:background="@drawable/template_button_bg"
             android:gravity="center"
             android:padding="5dp"
             android:text="Student Logout"
             android:layout_marginLeft="2dp"
             android:visibility="gone"
-            android:textColor="@color/bs_blue"
-            android:textSize="20sp"
-            customtv:fontType="5" />
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            customtv:fontType="3" />
     </TableRow>
 
     <com.sharmastech.skillhouettes.controls.CustomTextView

@@ -82,6 +82,7 @@ public class St_details extends AppCompatActivity implements View.OnClickListene
             st_image = (ImageView) findViewById(R.id.iv_studentimage);
             imageLoader = new ImageLoader(this, true);
             email = getIntent().getStringExtra("emailid");
+            String emailaddress = getIntent().getStringExtra("email");
             String lname = getIntent().getStringExtra("lname");
             String fname = getIntent().getStringExtra("fname");
             String username = getIntent().getStringExtra("username");
@@ -91,7 +92,7 @@ public class St_details extends AppCompatActivity implements View.OnClickListene
 
 
             ((TextView) findViewById(R.id.tv_studenttitle)).setText(fname);
-            ((TextView) findViewById(R.id.tv_favouriteband)).setText(Html.fromHtml("Email Address :" + " " + email));
+            ((TextView) findViewById(R.id.tv_favouriteband)).setText(Html.fromHtml("Email Address :" + " " + emailaddress));
             ((TextView) findViewById(R.id.tv_studenthobies)).setText(Html.fromHtml("Mobile Number :" + " " + mobile));
             ((TextView) findViewById(R.id.tv_studentname)).setText(Html.fromHtml("Name :" + " " + fname + " " + lname));
             String image_url = AppSettings.getInstance(this).getPropertyValue("i_path");

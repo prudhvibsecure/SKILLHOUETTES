@@ -12,7 +12,8 @@
         android:id="@+id/add_student"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp">
+        android:layout_margin="5dp"
+        android:visibility="gone">
 
         <ImageView
             android:id="@+id/iv_icon"
@@ -37,6 +38,7 @@
             android:padding="5dp"
             android:singleLine="true"
             android:text="Add Student"
+
             android:textColor="@android:color/black"
             android:textSize="14sp"
             android:textStyle="bold"
@@ -94,7 +96,7 @@
             android:padding="5dp"
             android:layout_centerVertical="true"
             android:contentDescription="@string/app_name"
-            android:src="@drawable/student_icon" />
+            android:src="@drawable/student_feed" />
 
         <com.sharmastech.skillhouettes.controls.CustomTextView
             android:layout_width="match_parent"
@@ -120,6 +122,7 @@
         android:id="@+id/add_student_share"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_margin="5dp">
 
         <ImageView

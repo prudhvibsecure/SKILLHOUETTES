@@ -48,7 +48,22 @@ public class SignUp extends AppCompatActivity implements IItemHandler {
         address = (EditText) findViewById(R.id.et_address);
         schoolname = (EditText) findViewById(R.id.et_school);
         street = (EditText) findViewById(R.id.et_street);
+        password.setOnFocusChangeListener(new View.OnFocusChangeListener() {
 
+            @Override
+            public void onFocusChange(View v, boolean hasFocus) {
+                if (!hasFocus) {
+                    String password_txt = password.getText().toString();
+                    password_txt = password_txt.trim();
+
+                    if (password_txt.length() == 0 || password_txt.length() < 8) {
+                        showEditTextError((EditText) findViewById(R.id.et_password), getString(R.string.psmbc));
+                        password.setSelection(password_txt.length());
+                        return;
+                    }
+                }
+            }
+        });
         Intent intent=getIntent();
         if (intent!=null){
 
@@ -138,7 +153,7 @@ public class SignUp extends AppCompatActivity implements IItemHandler {
                 return;
             }
 
-            if (et_password.length() < 8) {
+            if (et_password.length() < 7) {
                 showEditTextError((EditText) findViewById(R.id.et_password), getString(R.string.psmbc));
                 return;
             }
@@ -241,6 +256,7 @@ public class SignUp extends AppCompatActivity implements IItemHandler {
 
                         if (jsonObject.optString("status").equalsIgnoreCase("0")) {
                             showToast(jsonObject.optString("statusdescription"));
+                            launchActivity(LandingPage.class,1005);
                             SignUp.this.finish();
                         }
                         showToast(jsonObject.optString("statusdescription"));

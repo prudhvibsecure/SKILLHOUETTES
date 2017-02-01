@@ -75,47 +75,45 @@
                     android:id="@+id/tv_studentname"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:maxLines="1"
+                    android:gravity="left"
                     android:paddingBottom="5dp"
                     android:singleLine="true"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
                     customtv:fontType="5" />
 
-                <com.sharmastech.skillhouettes.controls.CustomTextView
+                <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                     android:id="@+id/tv_favouriteband"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:maxLines="1"
+                    android:gravity="left"
                     android:paddingBottom="5dp"
-                    android:singleLine="true"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
+                    app:trimLength="30"
                     customtv:fontType="5" />
 
-                <com.sharmastech.skillhouettes.controls.CustomTextView
+                <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                     android:id="@+id/tv_studenthobies"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:maxLines="1"
+                    android:gravity="left"
                     android:paddingBottom="5dp"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
+                    app:trimLength="40"
                     customtv:fontType="5" />
 
-                <com.sharmastech.skillhouettes.controls.CustomTextView
+                <com.sharmastech.skillhouettes.Animations.ReadMoreTextView
                     android:id="@+id/tv_studentdesc"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:gravity="center"
+                    android:gravity="left"
                     android:inputType="textLongMessage"
-                    android:maxLines="1"
                     android:paddingBottom="5dp"
                     android:textColor="@android:color/white"
                     android:textSize="14sp"
+                    app:trimLength="50"
                     customtv:fontType="4" />
 
             </LinearLayout>
